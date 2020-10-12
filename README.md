@@ -111,18 +111,18 @@ serverless --version
 
 ### Allow serverless to access our AWS account. Replace ACCESS_KEY and SECRET_KEY above with your AWS access and secret keys.
 
-```
+```shell
 serverless config credentials --provider aws --key ACCESS_KEY --secret SECRET_KEY
 ```
 
 ### Next, let's create a Serverless framework config file on application folder:
 
-```  
+``` 
 touch serverless.yml
 ```
 The following code goes in serverless.yml
 
-```
+```yml
 service: sample-app
 provider:
   name: aws
